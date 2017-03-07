@@ -124,7 +124,7 @@ mod build {
                 r"Build\Chakra.Core.sln",
             ], Some(&src_dir));
 
-            src_dir.join(format!("Build/VcBuild/bin/{:?}_test", arch))
+            src_dir.join(format!("Build/VcBuild/bin/{:?}_debug", arch))
         } else {
             // The ICU directory must be configued using pkg-config
             let icu_include = pkg_config::get_variable("icu-i18n", "includedir")
