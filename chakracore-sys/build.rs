@@ -119,7 +119,7 @@ mod build {
             // This requires `vcvars` to be sourced
             util::run_command("msbuild", &[
                 "/m",
-                "/p:Configuration=Test",
+                "/p:Configuration=Debug",
                 &format!("/p:Platform={:?}", arch),
                 r"Build\Chakra.Core.sln",
             ], Some(&src_dir));
