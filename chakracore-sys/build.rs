@@ -7,8 +7,8 @@ use std::{env, fs};
 use std::path::{Path, PathBuf};
 
 const LIBRARY: &'static str = "ChakraCore";
-const REPOSITORY: &'static str = "https://github.com/Microsoft/ChakraCore.git";
-const VERSION: &'static str = "1.4";
+const REPOSITORY: &'static str = "https://github.com/coreh/ChakraCore.git";
+const VERSION: &'static str = "1.4-JsGetModuleSpecifier";
 const LIBS: [(&'static str, &'static str); 3] = [
     ("pal/src",         "Chakra.Pal"),
     ("lib/Common/Core", "Chakra.Common.Core"),
